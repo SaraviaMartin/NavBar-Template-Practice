@@ -13,6 +13,10 @@ nav {
     font-family: var(--fontnav);
 }
 
+nav img{
+    margin-bottom: 20px;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -20,7 +24,6 @@ nav ul {
 nav ul li{
     padding-left: 70px ;
     padding-right: 70px;
-
 }
 
 nav a{
@@ -28,12 +31,22 @@ nav a{
     color: black;
 }
 
+nav :hover{
+    color: #F7B300;
+}
+
+
+
+
 nav button {
     margin: 10px;
 }
 nav #signIn {
     border: none;
     background: var(--main-bg-color);
+    height: 50px;
+    font-family: var(--fontnav);
+    margin-bottom: 20px;
 }
 
 .forFree {
@@ -43,19 +56,16 @@ nav #signIn {
     color: #f3ede5;
     padding: 15px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 main {
     display: flex;
-   
     font-family: var(--fontnav);
     font-weight: 600;
 }
 
-#HeroImg {
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 main h1 mark {
@@ -79,4 +89,16 @@ footer p{
 }
 footer img {
     margin: 25px;
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 600px) {
+    main{
+        display: block;
+    }
+    #heroImg{
+        max-width: fit-content;
+        max-height: min-content;
+    }
 }
